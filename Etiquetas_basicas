@@ -1,0 +1,119 @@
+<!DOCTYPE html><!--
+		Indica la version de HTML que estamos usando-->
+<html lang="en"><!--indica idioma-->
+<head><!-- Apertura del archivo HTML -->
+	<meta charset="UTF-8" /><!--  dice como interpretar el juego de caracteres ajenos alo ingles -->
+	<title>Etiquetas HTML</title><!--TITULO d ela pagina-->
+	<meta name="description" content="en este documento revisaremos algunas etiquetas basicasa de HTML" /><!--descripcion en la web de la pagina-->
+	<style>
+		a/*color de los enlaces*/
+		{
+			color: sandybrown;/*color  a las referencias*/
+		}
+
+		a:hover/*al pasar el maousse sobre el elemento*/
+		{
+			color: rosybrown;/*color cuando paso por arriba de las referencias*/
+			font-size: 200%;/*aumenta de tamaño de la fuente al pasar por arriba*/
+			text-decoration:none; 
+		}
+
+		div,h1,h4 
+		{
+			background: orange;
+			/*display: block;*/
+		}
+
+		iframe
+		{
+			height: 600px;
+			width: 80%;
+		}
+
+		span,img 
+		{
+			background: skyblue;
+			/*display: inline;*/
+		}
+
+		ol { list-style: lower-greek; }
+
+		ul{ list-style-type: square;:  }
+
+	</style>
+
+</head>
+<body>
+	<p>CONTENIDO DEL DOCUMENTO, mi primer pagina diseñada en HTML5</p><!--<p> es parrafo-->
+	<img src="HTML5.png" alt="HTML5" title="HTML5" border="10" width="256" height="256" /><!--src= IMAGEN (ruta) alt= NOMBRE de la imagen-->
+	<div id= "subir">
+		esto es una div
+	</div>
+	<span>
+		esto es un span
+	</span>
+	<h1>encabezado de tipo 1</h1>
+	<h2>encabezado de tipo 2</h2>
+	<h3>encabezado de tipo 3</h3>
+	<h4>encabezado de tipo 4</h4>
+	<h5>encabezado de tipo 5</h5>
+	<h6>encabezado de tipo 6</h6>
+	<!-- h${Encabezado tipo $}*6 -->
+	<p>
+	Esto es un parrafo. y este texto esta en <b> negritas</b>,<i>cursiva</i>,<u>subrayado</u>. <strong>Esta párte es importante</strong>, <mark>esta parte esta resaltada</mark>, <em>esto tiene enfasis</em> y estas son <SMALL>letras chiquitas, como en los contratos</SMALL>
+	</p>
+	<p>
+		La formula de agua es = H<sub>2</sub>O
+		<br/> <hr> <br/>
+		la formula de la relatividad es e = mc<sup>2</sup>
+		</p>
+		<h2>Listas desordenadas (viñetas)</h2>
+		<ul>
+			<li>Primavera</li>
+			<li>Verano</li>
+			<li>Otoño</li>
+			<li>Invierno</li>		
+		</li>
+		<h2>Listas desordenadas</h2>
+		<ol>
+			<ol>HTML</ol>
+			<ol>CSS</ol>
+			<ol>JS</ol>
+			<ol>AJAX</ol>
+			<ol>PHP</ol>
+			<ol>MySQL</ol>
+		</ol>
+		<h2>Listas multinivel</h2>
+		<ul>
+			<li>
+				Frontend:
+				<ol>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JS</li>
+				</ol>
+
+			</li>
+			<li>
+				Backend:
+				<ol>
+					<li>AJAX</li>
+					<li>PHP</li>
+					<li>MySQL</li>
+				</ol>	
+			</li>	
+		</ul>	
+		<a href="http://google.com" target="_blank">Google</a><!--permite hiperreferenciar a otro documento-->
+		<a href="http://w3.org/html/logo"><!--Enlace esterno-->
+			<img src="HTML5.png" alt="HTML5">
+		</a>
+		<a href="mailto:cesarmatias1989@gmail.com">cesarmatias1989@gmail.com</a>
+		<!--enlace a mail-->
+		<a href="#subir">Subir</a><!--referencia aenlace interno-->	
+		<br/><br/>
+		<iframe src="HTML5.pdf"><!--da marco y carga contenido esxterno-->
+		</iframe>
+		<iframe src="https://jonmircha.com/cursos"></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d83999.76808507481!2d2.224443658032658!3d48.85834858932651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d48.858207!2d2.29434!5e0!3m2!1ses-419!2sar!4v1548266407127" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</body>
+</html>
